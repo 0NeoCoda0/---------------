@@ -86,6 +86,17 @@ nav > div {
     font-size: 20px;
 }
 
+nav > div > a {
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+
+    transition: all 0.2s ease-in-out;
+}
+
+nav > div > a:hover {
+    text-shadow: 0 0 10px rgb(255, 183, 0);
+}
+
 .main {
     display: flex;
     justify-content: space-around;
