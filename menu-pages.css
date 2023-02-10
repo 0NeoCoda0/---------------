@@ -63,7 +63,7 @@ body {
 
 .logo-img {
     position: absolute;
-    background-image: url(/images/main-page/aesthetics-of-tastes.png);
+    background-image: url(/images/menu/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-origin: border-box;
@@ -97,8 +97,6 @@ nav > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    
 
     margin-top: 5vh;
 
