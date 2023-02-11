@@ -23,13 +23,14 @@ body {
 }
 
 .header {
-    height: 50px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
 }
 
 .header-line-270 {
     display: flex;
+    justify-content: start;
     
     width: 90vw;
     min-height: 50px;
@@ -40,6 +41,16 @@ body {
         270deg, 
         #343434, #343434 70%,
         #34343400 95%);
+}
+
+.logo-img {
+    margin-top: 10px;
+}
+
+.logo-img > img {
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 .header-line-90 {
@@ -56,24 +67,20 @@ body {
         #34343400 50%);
 }
 
-.logo-img > img {
-    width: 200px;
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
 /*МЕНЮ НАВИГАЦИИ*/
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 300px;
-    
+
+    margin: 0 40px;
+
+    width: 60%;
 }
 
 nav > div {
-    margin-right: 10px;
+    margin-right: 15px;
     font-family: "CaviarDreams", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -94,9 +101,10 @@ nav > div > a:hover {
 
 .main {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+
+    margin-top: 30px;
 }
 
 /*КАРТОЧКИ ТОВАРОВ*/
@@ -104,11 +112,8 @@ nav > div > a:hover {
 .product-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
-    margin-top: 5vh;
-
-    padding: 1%;
+    padding: 0;
     
     background-color: #343434;
     border-radius: 15px;
@@ -116,4 +121,10 @@ nav > div > a:hover {
     width: 220px;
     height: 280px;
 
+}
+
+.product-card > img {
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
 }
