@@ -55,9 +55,11 @@ body {
   justify-content: center;
   align-items: center;
 
-  padding: 0 10px;
+  padding: 0 0px;
 
-  /*style*/
+  /*size*/
+  width: 150px;
+  height: 40px;
 
   /*border*/
   border: 1px solid #fff;
@@ -92,20 +94,20 @@ TEST-END*/
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 70%;
   height: 100%;
 }
 
 .logo-img {
-  background-image: url(images/main-page/aesthetics-of-tastes.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: border-box;
   background-position: center;
-  width: 60vw;
-  height: 60px;
+
+  width: 50%;
+  margin: 0;
 }
 
 .main-text {
@@ -117,26 +119,41 @@ TEST-END*/
   font-size: calc(14px + 24 * (100vw / 1920));
 }
 
-.mb-1 {
-  margin-bottom: 30vh;
+.upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+
+    width: 100%;
 }
 
-.mb-2 {
-  margin-bottom: 15vh;
+.upper-2 {
+    flex-grow: 1;
 }
 
-.mb-3 {
-  margin-bottom: 20vh;
+.upper-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-grow: 1;
+    min-width: 50%;
 }
 
-@media (orientation: landscape) {
-  .mb-1 {
-    margin-bottom: 15vh;
-  }
-  .mb-2 {
-    margin-bottom: 10vh;
-  }
-  .mb-3 {
-    margin-bottom: 10vh;
-  }
+.logo-img {
+    position: absolute;
+    width: 70%;
+    margin: 0;
+}
+
+.logo-img > img {
+    width: 100%;
+}
+
+.div-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
 }
