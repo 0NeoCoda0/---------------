@@ -37,7 +37,7 @@ body {
     background-size: cover;
     background-origin: border-box;
     height: 100vh;
-    
+    vertical-align: middle;
     display: flex;
     align-items: center;
     justify-content: center;
