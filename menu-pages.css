@@ -146,6 +146,8 @@ button.add {
 
   font-family: "CaviarDreams", sans-serif;
   font-size: 18px;
+
+  cursor: pointer;
 }
 
 /*----------------------------------------*/
@@ -344,6 +346,9 @@ button.add {
 
   .logo-img > img {
     margin: 0;
+    align-self: center;
+    justify-content: center;
+    height: 50px;
   }
   /*МЕНЮ НАВИГАЦИИ МОБИЛЬНОЕ*/
   
@@ -412,6 +417,11 @@ button.add {
   div.product-name > p {
     margin-bottom: 5%;
     font-size: 1rem;
+  }
+
+  .product-card > img {
+    align-self: center;
+    height: 89px;
   }
 
   button.add {
