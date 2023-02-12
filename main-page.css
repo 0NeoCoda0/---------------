@@ -45,6 +45,63 @@ body {
   justify-content: center;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+
+/*ЛОГОТИП*/
+
+.upper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+
+  width: 100%;
+}
+
+.upper-2 {
+  flex-grow: 1;
+}
+
+.upper-1 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-grow: 1;
+  min-width: 50%;
+}
+
+.logo-img > img {
+  width: 100%;
+}
+
+.logo-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: center;
+
+  width: 250px;
+  margin: 0;
+}
+
+/* ЦЕНТРАЛЬНЫЙ ТЕКСТ*/
+
+.main-text {
+  width: 100%;
+}
+
+.main-text h1 {
+  text-align: center;
+  font-size: calc(14px + 24 * (100vw / 1920));
+}
+
 /*BUTTONS*/
 
 .button {
@@ -83,77 +140,16 @@ body {
   font-size: 10px;
 }
 
-/*BUTTONS-END*/
-
-/*TEST
-div, button {
-    border:1px dotted #fff;
-}
-TEST-END*/
-
-.main {
+.div-button {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 70%;
-  height: 100%;
+  justify-content: center;
+  flex-grow: 1;
 }
 
-.logo-img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-origin: border-box;
-  background-position: center;
+/*BUTTONS-END*/
 
-  width: 50%;
-  margin: 0;
-}
 
-.main-text {
-  width: 100%;
-}
 
-.main-text h1 {
-  text-align: center;
-  font-size: calc(14px + 24 * (100vw / 1920));
-}
 
-.upper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
 
-    width: 100%;
-}
-
-.upper-2 {
-    flex-grow: 1;
-}
-
-.upper-1 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    flex-grow: 1;
-    min-width: 50%;
-}
-
-.logo-img {
-    position: absolute;
-    width: 70%;
-    margin: 0;
-}
-
-.logo-img > img {
-    width: 100%;
-}
-
-.div-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
-}
