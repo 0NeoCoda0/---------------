@@ -315,8 +315,15 @@ button.add {
   /*ШАПКА МОБИЛЬНАЯ*/
   
     .header {
-    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    height: 130px;
+    
+    width: 100%;
+    display: inline-block;
     justify-content: center;
+
+    background-color: #1c1c1d;
   }
 
   .header-line-90 {
@@ -324,22 +331,32 @@ button.add {
   }
 
   .header-line-270 {
-    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     background: none;
   }
 
+  .logo-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo-img > img {
+    margin: 0;
+  }
   /*МЕНЮ НАВИГАЦИИ МОБИЛЬНОЕ*/
   
   nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 0px;
 
     width: 100%;
   }
 
   .header-line-270 {
+    margin: 0;
     justify-content: space-around;
   }
 
@@ -375,7 +392,7 @@ button.add {
   }
 
   .main {
-    margin-top: 100px;
+    margin-top: 150px;
   }
 
   /*КАРТОЧКИ ТОВАРОВ МОБИЛЬНЫЕ*/
