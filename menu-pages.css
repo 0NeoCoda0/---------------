@@ -1,134 +1,352 @@
 @font-face {
-    font-family: "CaviarDreams";
-    src: url(fonts/CaviarDreams/CaviarDreams.ttf);
+  font-family: "CaviarDreams";
+  src: url(fonts/CaviarDreams/CaviarDreams.ttf);
 }
 
 @font-face {
-    font-family: "trebuchetms";
-    src: url(fonts/Trebuchet\ MS/trebuchetms.ttf);
+  font-family: "trebuchetms";
+  src: url(fonts/Trebuchet\ MS/trebuchetms.ttf);
 }
 
 body {
-    margin: 0;
-    color: #e4e3e3;
-    width: 100vw;
-    height: 100vh;
-    background-color: #1c1c1d;
+  margin: 0;
+  color: #e4e3e3;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1c1d;
+
+  overflow: auto;
 }
 
 .background {
-    
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .header {
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-line-270 {
-    display: flex;
-    justify-content: start;
-    
-    width: 90vw;
-    min-height: 50px;
+  display: flex;
 
-    margin-top: 10px;
+  width: 90vw;
+  min-height: 50px;
 
-    background: linear-gradient(
-        270deg, 
-        #343434, #343434 70%,
-        #34343400 95%);
+  margin-top: 10px;
+
+  background: linear-gradient(270deg, #343434, #343434 70%, #34343400 95%);
 }
 
 .logo-img {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .logo-img > img {
-    width: 200px;
-    margin-top: 10px;
-    margin-left: 20px;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 .header-line-90 {
-    display: flex;
-    
-    width: 5vw;
-    min-height: 50px;
+  display: flex;
 
-    margin-top: 10px;
+  width: 5vw;
+  min-height: 50px;
 
-    background: linear-gradient(
-        90deg, 
-        #343434, #343434 5%,
-        #34343400 50%);
-}
+  margin-top: 10px;
 
-/*МЕНЮ НАВИГАЦИИ*/
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    
-
-    margin: 0 50px;
-
-    width: 60%;
-}
-
-nav > div {
-    margin-right: 15px;
-    font-family: "CaviarDreams", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-
-    
-}
-
-nav > div > a {
-    color: rgb(230, 230, 230);
-    text-decoration: none;
-
-    transition: all 0.2s ease-in-out;
-}
-
-nav > div > a:hover {
-    text-shadow: 0 0 10px rgb(255, 183, 0);
+  background: linear-gradient(90deg, #343434, #343434 5%, #34343400 50%);
 }
 
 /*ОСНОВНАЯ ИНФОРМАЦИЯ*/
 
 .main {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
-    margin-top: 30px;
+  margin-top: 30px;
+}
+
+.border-table {
+  padding: 0 40px;
 }
 
 /*КАРТОЧКИ ТОВАРОВ*/
 
-.product-card {
-    display: flex;
-    flex-direction: column;
+article.product-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
-    padding: 0;
-    
-    background-color: #343434;
-    border-radius: 15px;
-    
-    width: 220px;
-    height: 280px;
+  padding: 15px;
+  margin: 20px;
 
+  background-color: #343434;
+  border-radius: 20px;
+
+  width: 220px;
+  height: 300px;
 }
 
 .product-card > img {
-    border-radius: 15px;
-    margin: 0;
-    padding: 0;
+  border-radius: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+/*ТЕКСТ В КАРТОЧКЕ*/
+
+div.price > p {
+  font-family: "CaviarDreams", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+div.product-name > p {
+  font-family: "CaviarDreams", sans-serif;
+  font-size: 24px;
+  padding: 0;
+  margin: 0 0 30px 0;
+
+  letter-spacing: 2px;
+}
+
+/*КНОПКА В КАРТОЧКЕ*/
+
+div.add_button {
+  display: flex;
+  justify-content: center;
+}
+
+button.add {
+  padding: 0;
+
+  width: 100%;
+  height: 45px;
+
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 10px;
+  border-width: 1;
+  box-shadow: 0 0 2px rgb(230, 230, 230);
+
+  background-color: #4b4a4a;
+  color: rgb(230, 230, 230);
+
+  font-family: "CaviarDreams", sans-serif;
+  font-size: 18px;
+}
+
+/*МЕНЮ НАВИГАЦИИ ДЛЯ КОМПА*/
+
+@media (orientation: landscape) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+  }
+
+  nav > div {
+    margin-right: 15px;
+    font-family: "CaviarDreams", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  nav > div.menu > a::before {
+    content: "Меню";
+  }
+
+  .menu-img {
+    display: none;
+  }
+
+  nav > div.freeze > a::before {
+    content: "Полуфабрикаты";
+  }
+
+  .freeze-img {
+    display: none;
+  }
+
+  nav > div.delivery > a::before {
+    content: "Доставка";
+  }
+
+  .delivery-img {
+    display: none;
+  }
+
+  nav > div.contacts > a::before {
+    content: "Контакты";
+  }
+
+  .contacts-img {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 800px) {
+  .header-line-90 {
+    display: none;
+  }
+
+  nav {
+    justify-content: start;
+    width: 100%;
+    margin: 0 20px 0 20px;
+  }
+
+  nav > div.contacts {
+    display: none;
+  }
+
+  nav > img.contacts-img {
+    padding: 5px;
+
+    margin-right: 30px;
+
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 2px whitesmoke;
+    background-color: #4b4a4a;
+
+    height: 25px;
+    width: 25px;
+
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 720px) {
+  nav > div.delivery {
+    display: none;
+  }
+
+  nav > img.delivery-img {
+    padding: 5px;
+
+    margin-right: 30px;
+
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 2px whitesmoke;
+    background-color: #4b4a4a;
+
+    height: 25px;
+    width: 25px;
+
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 690px) {
+    nav > div.freeze {
+      display: none;
+    }
+  
+    nav > img.freeze-img {
+      padding: 5px;
+  
+      margin-right: 30px;
+  
+      border: 1px solid whitesmoke;
+      border-radius: 10px;
+      box-shadow: 0 0 2px whitesmoke;
+      background-color: #4b4a4a;
+  
+      height: 25px;
+      width: 25px;
+  
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+/*МЕНЮ НАВИГАЦИИ ДЛЯ ТЕЛЕФОНА*/
+
+@media (orientation: portrait) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-line-90 {
+    display: none;
+  }
+
+  .header-line-270 {
+    background: none;
+  }
+
+  .main {
+    margin-top: 60px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0px;
+
+    width: 100%;
+  }
+
+  .header-line-270 {
+    justify-content: space-around;
+  }
+
+  nav > div {
+    display: none;
+  }
+
+  nav > img {
+    padding: 5px;
+
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 2px whitesmoke;
+    background-color: #4b4a4a;
+
+    height: 25px;
+    width: 25px;
+
+    display: block;
+    cursor: pointer;
+  }
+}
+
+nav > div > a {
+  color: rgb(230, 230, 230);
+  text-decoration: none;
+
+  transition: all 0.2s ease-in-out;
+}
+
+nav > div > a:hover {
+  text-shadow: 0 0 10px rgb(255, 183, 0);
+}
+
+.bucket {
+  padding: 5px;
+
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 0 2px whitesmoke;
+  background-color: #4b4a4a;
+
+  height: 25px;
+  width: 25px;
+
+  display: block;
+  cursor: pointer;
 }
