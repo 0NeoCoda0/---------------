@@ -143,6 +143,8 @@ button.add {
   font-size: 18px;
 }
 
+/*----------------------------------------*/
+
 /*МЕНЮ НАВИГАЦИИ ДЛЯ КОМПА*/
 
 @media (orientation: landscape) {
@@ -202,12 +204,11 @@ button.add {
   .keitering-img {
     display: none;
   }
-  
 }
 
 /*ЗАМЕНИТЬ КОНТАКТЫ НА КАРТИНКУ*/
 
-@media (orientation: landscape) and (max-width: 890px) {
+@media (orientation: landscape) and (max-width: 830px) {
   .header-line-90 {
     display: none;
   }
@@ -242,32 +243,32 @@ button.add {
 
 /*ЗАМЕНИТЬ КЕЙТЕРИНГ НА КАРТИНКУ*/
 
-@media (orientation: landscape) and (max-width: 830px) {
-    nav > div.keitering {
-      display: none;
-    }
-  
-    nav > img.keitering-img {
-      padding: 5px;
-  
-      margin-right: 30px;
-  
-      border: 1px solid whitesmoke;
-      border-radius: 10px;
-      box-shadow: 0 0 2px whitesmoke;
-      background-color: #4b4a4a;
-  
-      height: 25px;
-      width: 25px;
-  
-      display: block;
-      cursor: pointer;
-    }
+@media (orientation: landscape) and (max-width: 760px) {
+  nav > div.keitering {
+    display: none;
   }
+
+  nav > img.keitering-img {
+    padding: 5px;
+
+    margin-right: 30px;
+
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 2px whitesmoke;
+    background-color: #4b4a4a;
+
+    height: 25px;
+    width: 25px;
+
+    display: block;
+    cursor: pointer;
+  }
+}
 
 /*ЗАМЕНИТЬ ДОСТАВКУ НА КАРТИНКУ*/
 
-@media (orientation: landscape) and (max-width: 790px) {
+@media (orientation: landscape) and (max-width: 700px) {
   nav > div.delivery {
     display: none;
   }
@@ -292,33 +293,35 @@ button.add {
 
 /*ЗАМЕНИТЬ ЗАМОРОЗКУ НА КАРТИНКУ*/
 
-@media (orientation: landscape) and (max-width: 750px) {
-    nav > div.freeze {
-      display: none;
-    }
-  
-    nav > img.freeze-img {
-      padding: 5px;
-  
-      margin-right: 30px;
-  
-      border: 1px solid whitesmoke;
-      border-radius: 10px;
-      box-shadow: 0 0 2px whitesmoke;
-      background-color: #4b4a4a;
-  
-      height: 25px;
-      width: 25px;
-  
-      display: block;
-      cursor: pointer;
-    }
+@media (orientation: landscape) and (max-width: 700px) {
+  nav > div.freeze {
+    display: none;
   }
 
-/*МЕНЮ НАВИГАЦИИ ДЛЯ ТЕЛЕФОНА*/
+  nav > img.freeze-img {
+    padding: 5px;
+
+    margin-right: 30px;
+
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 2px whitesmoke;
+    background-color: #4b4a4a;
+
+    height: 25px;
+    width: 25px;
+
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/*CSS ДЛЯ ТЕЛЕФОНА*/
 
 @media (orientation: portrait), (max-width: 650px) {
-  .header {
+  /*ШАПКА МОБИЛЬНАЯ*/
+  
+    .header {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -332,10 +335,8 @@ button.add {
     background: none;
   }
 
-  .main {
-    margin-top: 100px;
-  }
-
+  /*МЕНЮ НАВИГАЦИИ МОБИЛЬНОЕ*/
+  
   nav {
     display: flex;
     justify-content: space-around;
@@ -367,9 +368,43 @@ button.add {
     display: block;
     cursor: pointer;
   }
+
+  /*ТЕЛО МОБИЛЬНОЕ*/
+
+  .border-table {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main {
+    margin-top: 100px;
+  }
+
+  /*КАРТОЧКИ ТОВАРОВ МОБИЛЬНЫЕ*/
+ 
+  article.product-card {
+    margin: 30px 10px 10px 10px;
+    width: 150px;
+    height: 200px;
+  }
+
+  div.price > p {
+    margin-top: 1%;
+    font-size: 1rem;
+  }
+
+  div.product-name > p {
+    margin-bottom: 5%;
+    font-size: 1rem;
+  }
+
+  button.add {
+    height: 35px;
+    font-size: 1rem;
+  }
 }
 
-/*ОБРАБОТКА ССЫЛОК В НАВИГАЦИИ*/
+/*ОБРАБОТКА ССЫЛОК В НАВИГАЦИИ УНИВЕРСАЛЬНАЯ*/
 
 nav > div > a {
   color: rgb(230, 230, 230);
