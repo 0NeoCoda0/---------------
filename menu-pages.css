@@ -8,6 +8,11 @@
   src: url(fonts/Trebuchet\ MS/trebuchetms.ttf);
 }
 
+:root {
+    --ico-width: 30px;
+    --ico-height: 30px;
+}
+
 body {
   margin: 0;
   color: #e4e3e3;
@@ -156,7 +161,7 @@ button.add {
   }
 
   nav > div {
-    margin-right: 15px;
+    margin-right: 30px;
     font-family: "CaviarDreams", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -208,7 +213,7 @@ button.add {
 
 /*ЗАМЕНИТЬ КОНТАКТЫ НА КАРТИНКУ*/
 
-@media (orientation: landscape) and (max-width: 830px) {
+@media (orientation: landscape) and (max-width: 860px) {
   .header-line-90 {
     display: none;
   }
@@ -219,11 +224,11 @@ button.add {
     margin: 0 20px 0 20px;
   }
 
-  nav > div.contacts {
+  nav div.contacts {
     display: none;
   }
 
-  nav > img.contacts-img {
+  nav img.contacts-img {
     padding: 5px;
 
     margin-right: 30px;
@@ -233,8 +238,8 @@ button.add {
     box-shadow: 0 0 2px whitesmoke;
     background-color: #4b4a4a;
 
-    height: 25px;
-    width: 25px;
+    height: var(--ico-height);
+    width: var(--ico-width);
 
     display: block;
     cursor: pointer;
@@ -243,12 +248,12 @@ button.add {
 
 /*ЗАМЕНИТЬ КЕЙТЕРИНГ НА КАРТИНКУ*/
 
-@media (orientation: landscape) and (max-width: 760px) {
-  nav > div.keitering {
+@media (orientation: landscape) and (max-width: 780px) {
+  nav div.keitering {
     display: none;
   }
 
-  nav > img.keitering-img {
+  nav img.keitering-img {
     padding: 5px;
 
     margin-right: 30px;
@@ -258,33 +263,8 @@ button.add {
     box-shadow: 0 0 2px whitesmoke;
     background-color: #4b4a4a;
 
-    height: 25px;
-    width: 25px;
-
-    display: block;
-    cursor: pointer;
-  }
-}
-
-/*ЗАМЕНИТЬ ДОСТАВКУ НА КАРТИНКУ*/
-
-@media (orientation: landscape) and (max-width: 700px) {
-  nav > div.delivery {
-    display: none;
-  }
-
-  nav > img.delivery-img {
-    padding: 5px;
-
-    margin-right: 30px;
-
-    border: 1px solid whitesmoke;
-    border-radius: 10px;
-    box-shadow: 0 0 2px whitesmoke;
-    background-color: #4b4a4a;
-
-    height: 25px;
-    width: 25px;
+    height: var(--ico-height);
+    width: var(--ico-width);
 
     display: block;
     cursor: pointer;
@@ -294,11 +274,11 @@ button.add {
 /*ЗАМЕНИТЬ ЗАМОРОЗКУ НА КАРТИНКУ*/
 
 @media (orientation: landscape) and (max-width: 700px) {
-  nav > div.freeze {
+  nav div.freeze {
     display: none;
   }
 
-  nav > img.freeze-img {
+  nav img.freeze-img {
     padding: 5px;
 
     margin-right: 30px;
@@ -308,12 +288,25 @@ button.add {
     box-shadow: 0 0 2px whitesmoke;
     background-color: #4b4a4a;
 
-    height: 25px;
-    width: 25px;
+    height: var(--ico-height);
+    width: var(--ico-width);
 
     display: block;
     cursor: pointer;
   }
+}
+
+@media (max-width: 650px) {
+    nav img.freeze-img {
+        margin: 0;
+    }
+
+    nav img.keitering-img {
+        margin: 0;
+    }
+    nav img.contacts-img {
+        margin: 0;
+    }
 }
 
 /*CSS ДЛЯ ТЕЛЕФОНА*/
@@ -354,7 +347,7 @@ button.add {
     display: none;
   }
 
-  nav > img {
+  nav > a > img {
     padding: 5px;
 
     border: 1px solid whitesmoke;
@@ -362,11 +355,16 @@ button.add {
     box-shadow: 0 0 2px whitesmoke;
     background-color: #4b4a4a;
 
-    height: 25px;
-    width: 25px;
+    height: var(--ico-height);
+    width: var(--ico-width);
 
     display: block;
     cursor: pointer;
+  }
+
+  nav img.menu-img {
+    padding: 5px;
+    display: block;
   }
 
   /*ТЕЛО МОБИЛЬНОЕ*/
@@ -417,17 +415,17 @@ nav > div > a:hover {
   text-shadow: 0 0 10px rgb(255, 183, 0);
 }
 
-.bucket {
-  padding: 5px;
-
-  border: 1px solid whitesmoke;
-  border-radius: 10px;
-  box-shadow: 0 0 2px whitesmoke;
-  background-color: #4b4a4a;
-
-  height: 25px;
-  width: 25px;
-
-  display: block;
-  cursor: pointer;
-}
+img.bucket {
+    padding: 5px;
+  
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 2px whitesmoke;
+    background-color: #4b4a4a;
+  
+    height: var(--ico-height);
+    width: var(--ico-width);
+  
+    display: block;
+    cursor: pointer;
+  }
