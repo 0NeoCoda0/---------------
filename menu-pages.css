@@ -264,12 +264,30 @@ body {
 /*ОСНОВНАЯ ИНФОРМАЦИЯ ОБЩЕЕ*/
 
 .main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin-top: 60px;
+}
 
-  margin-top: 30px;
+/*ЗАГОЛОВОК ПУНКТА МЕНЮ*/
+
+div.article-title > p  {
+  /*font*/
+  font-size: 30px;
+
+  /*position*/
+  margin-left: 60px;
+  font-family: "CaviarDreams", serif;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+div.article-title.mu-1 {
+  margin-top: 80px;
+}
+
+/*КОНТЕЙНЕР С КАРТОЧКАМИ*/
+div.article-container {
+  display: flex;
+  justify-content: center;
 }
 
 .border-table {
@@ -289,8 +307,8 @@ article.product-card {
   background-color: #343434;
   border-radius: 20px;
 
-  width: 150px;
-  height: 210px;
+  width: 300px;
+  height: 340x;
 }
 
 .product-card>img {
@@ -304,18 +322,20 @@ article.product-card {
 div.price>p {
   font-family: "CaviarDreams", sans-serif;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
   padding: 0;
   margin: 5% 0 0 0;
 }
 
 div.product-name>p {
-  font-family: "CaviarDreams", sans-serif;
-  font-size: 20px;
+
   padding: 0;
   margin: 0 0 5% 0;
 
-  letter-spacing: 2px;
+  /*font*/
+  letter-spacing: 0;
+  font-family: "CaviarDreams", sans-serif;
+  font-size: 20px;
 }
 
 /*КНОПКА В КАРТОЧКЕ*/
@@ -344,7 +364,7 @@ button.add {
 
   cursor: pointer;
 
-  
+
 }
 
 button.add:hover {
