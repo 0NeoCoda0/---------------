@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "CaviarDreams";
+  src: url(fonts/CaviarDreams/CaviarDreams.ttf);
+}
+
+@font-face {
+  font-family: "trebuchetms";
+  src: url(fonts/Trebuchet\ MS/trebuchetms.ttf);
+}
+
+/*FONTS*/
+
+.dream-font {
+  font-family: "CaviarDreams", monospace;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.trebuchetms {
+  font-family: "trebuchetms", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 0.3em;
+
+  margin: 0;
+}
+
+/*FONTS-END*/
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.background {
+  /*background*/
+  background-image: url(images/main-page/mp-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  height: 100vh;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+}
+
+/*ЛОГОТИП*/
+
+.upper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+
+  width: 100%;
+}
+
+.upper-2 {
+  flex-grow: 1;
+}
+
+.upper-1 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-grow: 1;
+  min-width: 50%;
+}
+
+.logo-img > img {
+  width: 100%;
+}
+
+.logo-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: center;
+
+  width: 250px;
+  margin: 0;
+}
+
+/* ЦЕНТРАЛЬНЫЙ ТЕКСТ*/
+
+.main-text {
+  width: 100%;
+}
+
+.main-text h1 {
+  text-align: center;
+  font-size: calc(14px + 24 * (100vw / 1920));
+}
+
+/*BUTTONS*/
+
+.button {
+  background-color: rgba(0, 0, 0, 0);
+
+  /*positions*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 0px;
+
+  /*size*/
+  width: 150px;
+  height: 40px;
+
+  /*border*/
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 7px#fff;
+
+  /*fx-movement*/
+  transition: box-shadow, 0.4s linear;
+  transition: border, 0.4s linear;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 6px goldenrod;
+  border: 1px solid goldenrod;
+}
+
+.button > p > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.div-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+/*BUTTONS-END*/
+
+
+
+
+
