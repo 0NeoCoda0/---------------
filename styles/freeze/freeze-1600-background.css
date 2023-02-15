@@ -1,0 +1,21 @@
+@media (max-width: 1600px) {
+
+    /*ТЕЛО*/
+    body {
+        margin: 0;
+
+        /*Default text style*/
+        font-family: "CaviarDreams";
+    }
+
+    /*ФОН*/
+    .background {
+        display: flex;
+        flex-direction: column;
+
+        background-image: url(/images/monoback.jpg);
+        background-size: contain;
+        background-repeat: repeat;
+        height: auto;
+    }
+}
