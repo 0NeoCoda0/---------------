@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "CaviarDreams";
+    src: url(../../fonts/CaviarDreams/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: "trebuchetms";
+    src: url(../../fonts/Trebuchet\ MS/trebuchetms.ttf);
+}
+
 @media (max-width: 1600px) {
 
     /*ТЕЛО*/
@@ -13,7 +23,7 @@
         display: flex;
         flex-direction: column;
 
-        background-image: url(/images/monoback.jpg);
+        background-image: url(../../images/monoback.jpg);
         background-size: contain;
         background-repeat: repeat;
         height: auto;

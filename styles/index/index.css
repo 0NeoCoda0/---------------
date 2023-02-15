@@ -1,11 +1,11 @@
 @font-face {
   font-family: "CaviarDreams";
-  src: url(fonts/CaviarDreams/CaviarDreams.ttf);
+  src: url(../../fonts/CaviarDreams/CaviarDreams.ttf);
 }
 
 @font-face {
   font-family: "trebuchetms";
-  src: url(fonts/Trebuchet\ MS/trebuchetms.ttf);
+  src: url(../../fonts/Trebuchet\ MS/trebuchetms.ttf);
 }
 
 /*FONTS*/
@@ -34,7 +34,7 @@ body {
 
 .background {
   /*background*/
-  background-image: url(images/main-page/mp-back.png);
+  background-image: url(../../images/main-page/mp-back.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-origin: border-box;

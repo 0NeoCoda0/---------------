@@ -17,22 +17,6 @@
 
 @media (max-width: 1600px) {
 
-  /*ТЕЛО*/
-  body {
-    margin: 0;
-
-    /*Default text style*/
-    font-family: "CaviarDreams";
-  }
-
-  /*ФОН*/
-  .background {
-    background-image: url(/images/monoback.jpg);
-    background-size: cover;
-    background-repeat: repeat;
-    height: 100vh;
-  }
-
   /*ШАПКА*/
   header.header {
     height: 60px;
