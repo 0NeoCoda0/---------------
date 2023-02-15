@@ -80,19 +80,24 @@
     background: linear-gradient(270deg, #343434, #343434 70%, #34343400 95%);
   }
 
+  /*Учесть отсутствующую полосу прокрутки*/
+  div.empty-scroll {
+    width: 15px;
+
+    margin-top: var(--upper-space0);
+    align-self: right;
+    background-color: #343434;
+  }
+
   /*------Контейнеры для меню навигации*/
   nav {
-    /*Учитывание отсутствующей полосы прокрутки*/
-    margin-right: 15px;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     /*Динамические отступы между текстом навигации*/
     width: 70%;
-
-    margin: 0 50px 0 120px;
+    margin: 0 70px 0 120px;
   }
 
   nav>div {
