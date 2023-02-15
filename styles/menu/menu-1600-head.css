@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "CaviarDreams";
+  src: url(/fonts/CaviarDreams/CaviarDreams.ttf);
+}
+
+@font-face {
+  font-family: "trebuchetms";
+  src: url(/fonts/Trebuchet\ MS/trebuchetms.ttf);
+}
+
+:root {
+  --ico-size: 30px;
+  --upper-space: 10px;
+}
+
+/*------ WIDTH 1600-------*/
+
+@media (max-width: 1600px) {
+
+  /*ТЕЛО*/
+  body {
+    margin: 0;
+
+    /*Default text style*/
+    font-family: "CaviarDreams";
+  }
+
+  /*ФОН*/
+  .background {
+    background-image: url(/images/monoback.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    height: auto;
+  }
+
+  /*ШАПКА*/
+  header.header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*---Левая линия в шапке*/
+  .header-line-90-left {
+    display: flex;
+    
+    /*Size*/
+    min-height: 50px;
+    width: 5vw;
+
+    /*Position*/
+    margin-top: var(--upper-space);
+
+    /*Style*/
+    background: linear-gradient(90deg, #343434, #343434 5%, #34343400 50%);
+  }
+
+  /*---Картинка логотипа в шапке*/
+  div.logo-img img {
+    width: 200px;
+    margin-top: calc(var(--upper-space) * 2);
+    margin-left: 20px;
+  }
+
+  /*---Правая линия в шапке*/
+  .header-line-270-right {
+    /*Command for navigation*/
+    display: flex;
+    justify-content: left;
+
+
+    /*Size*/
+    min-height: 50px;
+    width: 90vw;
+
+    /*Position*/
+    margin-top: var(--upper-space);
+
+    /*Style*/
+    background: linear-gradient(270deg, #343434, #343434 70%, #34343400 95%);
+  }
+
+  /*------Контейнеры для меню навигации*/
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*Динамические отступы между текстом навигации*/
+    width: 70%;
+
+    margin: 0 50px 0 120px;
+  }
+
+  nav>div {
+    margin-right: 30px;
+    font-family: "CaviarDreams", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  /*------Скрыть картинки навигации*/
+  nav>a>img {
+    display: none;
+  }
+
+  /*------Показать текст пунктов навигации*/
+  nav>div.menu>a::before {
+    content: "Меню";
+  }
+
+  nav>div.freeze>a::before {
+    content: "Полуфабрикаты";
+  }
+
+  nav>div.delivery>a::before {
+    content: "Доставка";
+  }
+
+  nav>div.contacts>a::before {
+    content: "Контакты";
+  }
+
+  nav>div.keitering>a::before {
+    content: "Кейтеринг";
+  }
+
+  /* NAV FX & STYLE */
+  /*------Подсветка выбранного текста-пункта навигации*/
+  nav>div.menu>a {
+    text-shadow: 0 0 5px goldenrod;
+    color: rgb(255, 217, 0);
+  }
+
+  /*Стилизация текста пунктов навигации и эффекты*/
+  nav>div>a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  /*---Подсветка текста навигации при наведении*/
+  nav>div>a:hover {
+    text-shadow: 0 0 10px rgb(255, 183, 0);
+  }
+
+  /*Показать кнопку корзины покупок*/
+  img.bucket {
+    padding: 5px;
+  
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 2px whitesmoke;
+    background-color: #4b4a4a;
+  
+    height: var(--ico-size);
+    width: var(--ico-size);
+  
+    display: block;
+    cursor: pointer;
+  }
+}
