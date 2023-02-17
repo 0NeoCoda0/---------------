@@ -113,7 +113,7 @@
   }
 
   nav>div.contacts>a::before {
-    content: "Контакты";
+    content: "О нас";
   }
 
   nav>div.keitering>a::before {

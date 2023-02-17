@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "CaviarDreams";
+  src: url(../../fonts/CaviarDreams/CaviarDreams.ttf);
+}
+
+@font-face {
+  font-family: "trebuchetms";
+  src: url(../../fonts/Trebuchet\ MS/trebuchetms.ttf);
+}
+
+/*ТЕЛО*/
+body {
+  margin: 0;
+  /*Default text style*/
+  font-family: "CaviarDreams";
+}
+
+/*ФОН*/
+.background {
+  background-image: url(../../images/monoback.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh;
+}

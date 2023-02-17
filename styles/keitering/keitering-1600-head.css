@@ -68,7 +68,7 @@
   div.empty-scroll {
     width: 15px;
 
-    margin-top: var(--upper-space0);
+    margin-top: var(--upper-space);
     align-self: right;
     background-color: #343434;
   }
@@ -110,7 +110,7 @@
   }
 
   nav>div.contacts>a::before {
-    content: "Контакты";
+    content: "О нас";
   }
 
   nav>div.keitering>a::before {

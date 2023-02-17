@@ -1,0 +1,111 @@
+:root {
+    --margin-1600-LR: 10vw;
+    --ico-size-about: 60px;
+}
+
+/*Основное тело*/
+main {
+    /*font*/
+    color: white;
+    font-size: 18px;
+}
+
+/*Заголовки*/
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    min-width: 310px;
+}
+
+div+h2 {
+    margin-top: 60px;
+}
+
+h1,
+h2 {
+    /*font*/
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+/*Окно с информацией*/
+div.middle-window {
+    display: flex;
+    margin: 0 var(--margin-1600-LR);
+}
+
+/*Стили для карты*/
+div.map>iframe {
+    width: 40vw;
+    min-width: 400px;
+    height: 45vh;
+    min-height: 300px;
+    max-height: 350px;
+
+}
+
+/*Время работы, номер телефона и почта*/
+div.work-time-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: var(--margin-1600-LR);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.phone,
+.mail,
+.work-time,
+.location,
+.metro,
+.social-ico {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.metro {
+    margin-top: 0;
+    margin-left: 70px;
+}
+
+.location {
+    margin-top: 30px;
+}
+
+span.text-info {
+    margin: 0 10px;
+    min-width: 150px;
+}
+
+/*Стили для иконок*/
+main img {
+    width: var(--ico-size-about);
+}
+
+div.instagram {
+    margin-left: 10px;
+}
+
+div.social-ico {
+    display: flex;
+}
+
+/*MAX WIDTH 1280 px */
+
+@media (max-width: 1280px) {
+}
+
+/*MAX WIDTH 1280 px */
+
+@media (max-width: 1024px) {
+
+}
