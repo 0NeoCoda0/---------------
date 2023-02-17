@@ -10,7 +10,7 @@
 
 /*------ WIDTH 1600-------*/
 
-@media (max-width: 1600px) {
+@media (orientation:landscape), (max-width: 1600px) {
     .main {
         margin-top: 80px;
     }

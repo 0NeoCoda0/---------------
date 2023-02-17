@@ -8,7 +8,7 @@
     src: url(../../fonts/Trebuchet\ MS/trebuchetms.ttf);
 }
 
-@media (max-width: 1600px) {
+@media (orientation:landscape), (max-width: 1600px) {
 
     /*ТЕЛО*/
     body {
