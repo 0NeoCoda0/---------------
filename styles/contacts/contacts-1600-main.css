@@ -1,28 +1,34 @@
 :root {
     --margin-1600-LR: 10vw;
-    --ico-size-about: 60px;
+    --ico-size-about: 50px;
 }
 
 /*Основное тело*/
-main {
+.main {
     /*font*/
     color: white;
     font-size: 18px;
+
+    margin-top: 50px;
+
+    transition: margin-top 0.2s ease-in-out;
 }
 
 /*Заголовки*/
 h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 h2 {
     margin-top: 0;
     margin-bottom: 0;
-    min-width: 310px;
+
+    min-width: 230px;
+    font-size: 1.3rem;
 }
 
-div+h2 {
-    margin-top: 60px;
+div>h2 {
+    margin-top: 30px;
 }
 
 h1,
@@ -35,10 +41,21 @@ h2 {
 /*Окно с информацией*/
 div.middle-window {
     display: flex;
+    align-items: center;
     margin: 0 var(--margin-1600-LR);
 }
 
 /*Стили для карты*/
+div.map {
+    display: flex;
+    flex-direction: column;
+}
+
+div.under-map {
+    display: flex;
+    margin-top: 20px;
+}
+
 div.map>iframe {
     width: 40vw;
     min-width: 400px;
@@ -48,7 +65,7 @@ div.map>iframe {
 
 }
 
-/*Время работы, номер телефона и почта*/
+/*Время работы, номер телефона, почта и соц.сети*/
 div.work-time-window {
     display: flex;
     flex-direction: column;
@@ -74,16 +91,17 @@ div.work-time-window {
 
 .metro {
     margin-top: 0;
-    margin-left: 70px;
+    margin-left: 30px;
 }
 
 .location {
-    margin-top: 30px;
+    max-width: 220px;
 }
 
 span.text-info {
     margin: 0 10px;
-    min-width: 150px;
+
+    font-size: 1rem;
 }
 
 /*Стили для иконок*/
@@ -99,13 +117,117 @@ div.social-ico {
     display: flex;
 }
 
-/*MAX WIDTH 1280 px */
+/*LANDSCAPE АДАПТАЦИЯ ПО ВЫСОТЕ*/
 
-@media (max-width: 1280px) {
+@media (orientation: landscape) and (max-height: 620px) {
+    .main {
+        margin-top: 10px;
+        transition: margin-top 0.2s ease-in-out;
+    }
 }
 
-/*MAX WIDTH 1280 px */
+/*LANDSCAPE АДАПТАЦИЯ ПО ШИРИНЕ*/
 
-@media (max-width: 1024px) {
-
+@media (orientation: landscape) and (max-width: 1060px) {
+    .location {
+        min-width: 220px;
+    }
 }
+
+@media (orientation: landscape) and (max-width: 930px) {
+    div.middle-window {
+        margin: 0 40px;
+        justify-content: space-between;
+    }
+
+    div.work-time-window {
+        margin-left: 40px;
+    }
+
+    h2 {
+        max-width: none;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 830px) {
+
+    /*Расположение элементов в среднем листе в колонку*/
+    div.middle-window {
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+    }
+
+    /*Адаптация карты под ширину экрана*/
+    div.map>iframe {
+        max-width: none;
+        width: 80vw;
+    }
+
+    /*Создание фона и общих границ для инфо-окна в целом*/
+    div.work-time-window {
+        margin: 30px 0 50px 0;
+        padding: 20px;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+
+        border-radius: 50px;
+
+        background-color: rgba(34, 37, 37, 0.575);
+    }
+
+    /*Убирание отступов у заголовков*/
+    div>h2 {
+        margin: 0;
+    }
+
+    /*Настройка заголовка контейнера инфо-времени*/
+    div.time-container>h2 {
+        min-width: 0;
+    }
+
+    /*Настройка поведения вложенных инфо-контейнеров*/
+    .contacts-container,
+    .social-container,
+    .time-container {
+        flex: 1 0 100px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Создание границ у вложенных инфо-контейнеров*/
+    .contacts-container,
+    .social-container,
+    .time-container {
+        padding: 7px;
+        margin: 7px;
+        border: 1px solid whitesmoke;
+        border-radius: 20px;
+
+        background-color: rgba(65, 70, 70, 0.575);
+
+        
+    }
+}
+
+@media (orientation: landscape) and (max-width: 760px) {
+    /*Выравнивание инфо-контейнеров в столбик по центру*/
+    div.work-time-window {
+        flex-direction: column;
+    }
+
+    .contacts-container,
+    .social-container,
+    .time-container {
+        flex: none;
+    }
+}
+
+/*
+1. Закончить адаптацию станицы для landscape
+2. Адаптировать страницу под portraite
+3. Выполнить успешное тестирование адаптации на смартфоне*/

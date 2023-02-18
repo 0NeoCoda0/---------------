@@ -14,7 +14,7 @@
 }
 
 /*ШАПКА*/
-header.header {
+.header {
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -77,7 +77,7 @@ nav {
 
   /*Динамические отступы между текстом навигации*/
   width: 70%;
-  margin: 0 70px 0 120px;
+  margin-left: 5vw;
 }
 
 nav>div {
@@ -146,4 +146,162 @@ img.bucket {
 
   display: block;
   cursor: pointer;
+}
+
+@media (orientation: landscape) and (max-width: 1060px) {
+
+  /*ЗАМЕНИТЬ КОНТАКТЫ НА КАРТИНКУ*/
+  nav {
+    margin-left: 5vw;
+  }
+
+  nav div.contacts {
+    display: none;
+  }
+
+  nav img.contacts-img {
+    padding: 5px;
+
+    margin-right: 30px;
+
+    border-radius: 10px;
+    background-color: #4b4a4a;
+    border: 1px solid gold;
+    box-shadow: 0 0 8px gold;
+
+    height: var(--ico-size);
+    width: var(--ico-size);
+
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 860px) {
+
+  /*ЗАМЕНИТЬ КЕЙТЕРИНГ НА КАРТИНКУ*/
+  nav div.keitering {
+    display: none;
+  }
+
+  nav img.keitering-img {
+    padding: 5px;
+
+    margin-right: 30px;
+
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 2px whitesmoke;
+    background-color: #4b4a4a;
+
+    height: var(--ico-size);
+    width: var(--ico-size);
+
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 800px) {
+  /*ЗАМЕНИТЬ ЗАМОРОЗКУ НА КАРТИНКУ*/
+  nav div.freeze {
+    display: none;
+  }
+
+  nav img.freeze-img {
+    padding: 5px;
+
+    margin-right: 30px;
+
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 2px whitesmoke;
+    background-color: #4b4a4a;
+
+    height: var(--ico-size);
+    width: var(--ico-size);
+
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 660px) {
+  /*ЗАМЕНИТЬ МЕНЮ НА КАРТИНКУ*/
+  nav div.menu {
+    display: none;
+  }
+
+  nav img.menu-img {
+    padding: 5px;
+
+    margin-right: 30px;
+
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 2px whitesmoke;
+    background-color: #4b4a4a;
+
+    height: var(--ico-size);
+    width: var(--ico-size);
+
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 620px) {
+  /*ОФОРМЛЕНИЕ ШАПКИ*/
+  
+  .header {
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 130px;
+
+    background-color: #1c1c1d;
+  }
+  
+  div.header-line-90-left {
+    display: none;
+  }
+  
+  /*Стили для логотипа*/
+  .logo-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  div.logo-img>img {
+    margin: 10px 0 0 0;
+    align-self: center;
+    justify-content: center;
+    height: 50px;
+  }
+
+  div.header-line-270-right {
+    display: flex;
+    background: none;
+    margin: 0;
+    justify-content: space-around;
+  }
+
+  div.empty-scroll {
+    display: none;
+  }
+
+  /*Стили для кнопок в меню навигации*/
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 0;
+    padding-top: 12px;
+    width: 100%;
+  }
 }
