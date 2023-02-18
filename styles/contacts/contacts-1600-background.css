@@ -9,34 +9,20 @@
 }
 
 /*ТЕЛО*/
+html,
 body {
   margin: 0;
+  padding: 0;
+  height: 100%;
   /*Default text style*/
   font-family: "CaviarDreams";
 }
 
 /*ФОН*/
-.background {
+body {
   background-image: url(../../images/monoback.jpg);
   background-size: cover;
-  background-repeat: repeat;
-  height: 100vh;
-}
-
-@media (orientation: landscape) and (max-width: 830px) {
-  .background {
-    height: 100%;
-  }
-}
-
-@media (orientation: landscape) and (max-width: 620px) {
-  .background {
-    display: flex;
-  }
-}
-
-@media (orientation: landscape) and (max-height: 520px) {
-  .background {
-    height: 100%;
-  }
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
