@@ -328,7 +328,6 @@ img.bucket {
     height: 130px;
     background-color: #1c1c1d;
     flex-direction: column;
-    align-content: center;
     align-items: center;
   }
 
