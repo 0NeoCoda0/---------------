@@ -116,7 +116,7 @@ nav>div.keitering>a::before {
 /* NAV FX & STYLE */
 
 /*Убрать подсвечивание ссылки синим фоном*/
-a:active {
+nav>a:active {
   background-color: transparent;
 }
 
