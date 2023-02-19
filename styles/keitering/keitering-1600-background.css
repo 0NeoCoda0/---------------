@@ -18,11 +18,6 @@
   body {
     position: relative;
   }
-  
-  /* Запрещаем прокручивание на всех уровнях */
-  body * {
-    pointer-events: none;
-  }
 
   a, button {
     pointer-events: auto;
