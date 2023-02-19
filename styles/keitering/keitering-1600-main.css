@@ -27,7 +27,7 @@
     /*ОСНОВНОЙ КОНТЕЙНЕР*/
     div.content-container {
         display: flex;
-        margin: 20px 130px 0;
+        margin: 15px 10vw 15px;
     }
 
     /*КАРТИНКА*/
@@ -109,5 +109,64 @@
     div.button button:hover {
         box-shadow: 0px 0px 6px goldenrod;
         border: 1px solid goldenrod;
+    }
+}
+
+@media (orientation:landscape) and (max-width: 1220px) {
+    /*Сделать отступ для навигационной панели*/
+ 
+    
+    /*Выровнять контейнеры в столбик для мобильных устройств*/
+    div.content-container {
+        margin: 0;
+        
+        display: flex;
+        flex-direction: column;
+
+        width: 80vw;
+    }
+
+    div.image-food {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*установить картинку по размеру контейнера*/
+    div.image-food img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /*Убрать у текста лишние отступы*/
+    div.text-container {
+        padding: 3vh 5vw;
+    }
+}
+
+@media (orientation:portrait) {
+    /*Сделать отступ для навигационной панели*/
+    main.main {
+        margin-top: 150px;
+    }
+    
+    /*Выровнять контейнеры в столбик для мобильных устройств*/
+    div.content-container {
+        margin: 0;
+        
+        display: flex;
+        flex-direction: column;
+
+        width: 80vw;
+    }
+
+    /*установить картинку по размеру контейнера*/
+    div.image-food img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /*Убрать у текста лишние отступы*/
+    div.text-container {
+        padding: 3vh 5vw;
     }
 }
