@@ -13,141 +13,400 @@
   --upper-space: 10px;
 }
 
-/*------ WIDTH 1600-------*/
+/*ШАПКА*/
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
 
-@media (orientation:landscape), (max-width: 1600px) {
+/*---Левая линия в шапке*/
+.header-line-90-left {
+  display: flex;
 
-  /*ШАПКА*/
-  header.header {
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-  }
+  /*Size*/
+  min-height: 50px;
+  width: 5vw;
 
-  /*---Левая линия в шапке*/
-  .header-line-90-left {
-    display: flex;
-    
-    /*Size*/
-    min-height: 50px;
-    width: 5vw;
+  /*Position*/
+  margin-top: var(--upper-space);
 
-    /*Position*/
-    margin-top: var(--upper-space);
+  /*Style*/
+  background: linear-gradient(90deg, #343434, #343434 5%, #34343400 50%);
+}
 
-    /*Style*/
-    background: linear-gradient(90deg, #343434, #343434 5%, #34343400 50%);
-  }
+/*---Картинка логотипа в шапке*/
+div.logo-img img {
+  width: 200px;
+  margin-top: calc(var(--upper-space) * 2);
+  margin-left: 20px;
+}
 
-  /*---Картинка логотипа в шапке*/
-  div.logo-img img {
-    width: 200px;
-    margin-top: calc(var(--upper-space) * 2);
-    margin-left: 20px;
-  }
-
-  /*---Правая линия в шапке*/
-  .header-line-270-right {
-    /*Command for navigation*/
-    display: flex;
-    justify-content: left;
+/*---Правая линия в шапке*/
+.header-line-270-right {
+  /*Command for navigation*/
+  display: flex;
+  justify-content: left;
 
 
-    /*Size*/
-    min-height: 50px;
-    width: 90vw;
+  /*Size*/
+  min-height: 50px;
+  width: 90vw;
 
-    /*Position*/
-    margin-top: var(--upper-space);
+  /*Position*/
+  margin-top: var(--upper-space);
 
-    /*Style*/
-    background: linear-gradient(270deg, #343434, #343434 70%, #34343400 95%);
-  }
+  /*Style*/
+  background: linear-gradient(270deg, #343434, #343434 70%, #34343400 95%);
+}
 
-  /*Учесть отсутствующую полосу прокрутки*/
-  div.empty-scroll {
-    width: 15px;
+/*Учесть отсутствующую полосу прокрутки*/
+div.empty-scroll {
+  width: 15px;
 
-    margin-top: var(--upper-space);
-    align-self: right;
-    background-color: #343434;
-  }
+  margin-top: var(--upper-space);
+  align-self: right;
+  background-color: #343434;
+}
 
-  /*------Контейнеры для меню навигации*/
+/*------Контейнеры для меню навигации*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /*Динамические отступы между текстом навигации*/
+  width: 70%;
+  margin-left: 5vw;
+}
+
+nav>div {
+  margin-right: 30px;
+  font-family: "CaviarDreams", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/*------Скрыть картинки навигации*/
+nav>a>img {
+  display: none;
+}
+
+/*------Показать текст пунктов навигации*/
+nav>div.menu>a::before {
+  content: "Меню";
+}
+
+nav>div.freeze>a::before {
+  content: "Полуфабрикаты";
+}
+
+nav>div.delivery>a::before {
+  content: "Доставка";
+}
+
+nav>div.contacts>a::before {
+  content: "О нас";
+}
+
+nav>div.keitering>a::before {
+  content: "Кейтеринг";
+}
+
+/* NAV FX & STYLE */
+/*------Подсветка выбранного текста-пункта навигации*/
+nav>div.keitering>a {
+  text-shadow: 0 0 5px goldenrod;
+  color: rgb(255, 217, 0);
+}
+
+/*Стилизация текста пунктов навигации и эффекты*/
+nav>div>a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/*---Подсветка текста навигации при наведении*/
+nav>div>a:hover {
+  text-shadow: 0 0 10px rgb(255, 183, 0);
+}
+
+/*Показать кнопку корзины покупок*/
+img.bucket {
+  padding: 5px;
+
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 0 2px whitesmoke;
+  background-color: #4b4a4a;
+
+  height: var(--ico-size);
+  width: var(--ico-size);
+
+  display: block;
+  cursor: pointer;
+}
+
+@media (orientation: landscape) and (max-width: 1060px) {
+
+  /*ЗАМЕНИТЬ КОНТАКТЫ НА КАРТИНКУ*/
   nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    /*Динамические отступы между текстом навигации*/
-    width: 70%;
-    margin: 0 70px 0 120px;
+    margin-left: 5vw;
   }
 
-  nav>div {
-    margin-right: 30px;
-    font-family: "CaviarDreams", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-  }
-
-  /*------Скрыть картинки навигации*/
-  nav>a>img {
+  nav div.contacts {
     display: none;
   }
 
-  /*------Показать текст пунктов навигации*/
-  nav>div.menu>a::before {
-    content: "Меню";
-  }
-
-  nav>div.freeze>a::before {
-    content: "Полуфабрикаты";
-  }
-
-  nav>div.delivery>a::before {
-    content: "Доставка";
-  }
-
-  nav>div.contacts>a::before {
-    content: "О нас";
-  }
-
-  nav>div.keitering>a::before {
-    content: "Кейтеринг";
-  }
-
-  /* NAV FX & STYLE */
-  /*------Подсветка выбранного текста-пункта навигации*/
-  nav>div.keitering>a {
-    text-shadow: 0 0 5px goldenrod;
-    color: rgb(255, 217, 0);
-  }
-
-  /*Стилизация текста пунктов навигации и эффекты*/
-  nav>div>a {
-    color: white;
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
-  }
-  /*---Подсветка текста навигации при наведении*/
-  nav>div>a:hover {
-    text-shadow: 0 0 10px rgb(255, 183, 0);
-  }
-
-  /*Показать кнопку корзины покупок*/
-  img.bucket {
+  nav img.contacts-img {
     padding: 5px;
-  
+
+    margin-right: 30px;
+
+    border-radius: 10px;
+    background-color: #4b4a4a;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 0 2px whitesmoke;
+    
+
+    height: var(--ico-size);
+    width: var(--ico-size);
+
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 860px) {
+
+  /*ЗАМЕНИТЬ КЕЙТЕРИНГ НА КАРТИНКУ*/
+  nav div.keitering {
+    display: none;
+  }
+
+  nav img.keitering-img {
+    padding: 5px;
+
+    margin-right: 30px;
+
+    border-radius: 10px;
+    border: 1px solid gold;
+    box-shadow: 0 0 8px gold;
+    background-color: #4b4a4a;
+
+    height: var(--ico-size);
+    width: var(--ico-size);
+
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 800px) {
+
+  /*ЗАМЕНИТЬ ЗАМОРОЗКУ НА КАРТИНКУ*/
+  nav div.freeze {
+    display: none;
+  }
+
+  nav img.freeze-img {
+    padding: 5px;
+
+    margin-right: 30px;
+
     border: 1px solid whitesmoke;
     border-radius: 10px;
     box-shadow: 0 0 2px whitesmoke;
     background-color: #4b4a4a;
-  
+
     height: var(--ico-size);
     width: var(--ico-size);
-  
+
     display: block;
     cursor: pointer;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 660px) {
+
+  /*ЗАМЕНИТЬ МЕНЮ НА КАРТИНКУ*/
+  nav div.menu {
+    display: none;
+  }
+
+  nav img.menu-img {
+    padding: 5px;
+
+    margin-right: 30px;
+
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 2px whitesmoke;
+    background-color: #4b4a4a;
+
+    height: var(--ico-size);
+    width: var(--ico-size);
+
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 620px) {
+  /*ОФОРМЛЕНИЕ ШАПКИ*/
+
+  .header {
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 130px;
+
+    background-color: #1c1c1d;
+  }
+
+  div.header-line-90-left {
+    display: none;
+  }
+
+  /*Стили для логотипа*/
+  .logo-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  div.logo-img>img {
+    margin: 10px 0 0 0;
+    align-self: center;
+    justify-content: center;
+    height: 50px;
+  }
+
+  div.header-line-270-right {
+    display: flex;
+    background: none;
+    margin: 0;
+    justify-content: space-around;
+  }
+
+  div.empty-scroll {
+    display: none;
+  }
+
+  /*Стили для кнопок в меню навигации*/
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 0;
+    padding-top: 12px;
+    width: 100%;
+  }
+}
+
+@media (orientation:portrait) {
+
+  /*Перенести шапку в вертикальное расположение*/
+  .header {
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 130px;
+
+    background-color: #1c1c1d;
+  }
+
+  div.header-line-90-left {
+    display: none;
+  }
+
+  /*Стили для логотипа*/
+  .logo-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  div.logo-img>img {
+    margin: 10px 0 0 0;
+    align-self: center;
+    justify-content: center;
+    height: 50px;
+  }
+
+  div.header-line-270-right {
+    display: flex;
+    background: none;
+    margin: 0;
+    justify-content: space-around;
+  }
+
+  div.empty-scroll {
+    display: none;
+  }
+
+  /*Стили для кнопок в меню навигации*/
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 0;
+    padding-top: 12px;
+    width: 100%;
+  }
+
+  /*Скрыть надписи в шапке*/
+  nav div.contacts {
+    display: none;
+  }
+
+  nav div.keitering {
+    display: none;
+  }
+
+  nav div.freeze {
+    display: none;
+  }
+
+  nav div.menu {
+    display: none;
+  }
+
+  /*Показать иконки меню навигации*/
+
+  .menu-img,
+  .freeze-img,
+  .keitering-img,
+  .contacts-img {
+    padding: 5px;
+
+    margin-right: 30px;
+
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 0 2px whitesmoke;
+    background-color: #4b4a4a;
+
+    height: var(--ico-size);
+    width: var(--ico-size);
+
+    display: block;
+    cursor: pointer;
+  }
+
+  /*Подсветить текущую иконку навигации */
+
+  img.keitering-img {
+    border: 1px solid goldenrod;
+    box-shadow: 0 0 6px 1px goldenrod;
   }
 }

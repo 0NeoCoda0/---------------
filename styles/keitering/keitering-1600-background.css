@@ -8,21 +8,21 @@
     src: url(../../fonts/Trebuchet\ MS/trebuchetms.ttf);
   }
 
-@media (orientation:landscape), (max-width: 1600px) {
+/*ТЕЛО*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /*Default text style*/
+  font-family: "CaviarDreams";
+}
 
-    /*ТЕЛО*/
-  body {
-    margin: 0;
-
-    /*Default text style*/
-    font-family: "CaviarDreams";
-  }
-
-  /*ФОН*/
-  .background {
-    background-image: url(../../images/monoback.jpg);
-    background-size: cover;
-    background-repeat: repeat;
-    height: 100vh;
-  }
+/*ФОН*/
+body {
+  background-image: url(../../images/monoback.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
