@@ -320,14 +320,14 @@ img.bucket {
   .header {
     position: fixed;
     top: 0;
-
+    width: 100vw;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
+    justify-content: space-evenly;
     height: 130px;
-
     background-color: #1c1c1d;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
   }
 
   div.header-line-90-left {
@@ -413,5 +413,10 @@ img.bucket {
   img.contacts-img {
     border: 1px solid goldenrod;
     box-shadow: 0 0 6px 1px goldenrod;
+  }
+
+  /*Создать правильную ширину у ссылок*/
+  nav>a {
+    width: 42px;
   }
 }
