@@ -9,6 +9,8 @@
   }
 
   html, body {
+    margin: 0;
+    padding: 0;
     height: 100%;
     overflow: hidden;
   }
@@ -20,6 +22,11 @@
   /* Запрещаем прокручивание на всех уровнях */
   body * {
     pointer-events: none;
+  }
+
+  a, button {
+    pointer-events: auto;
+    z-index: 1;
   }
   
   /* Разрешаем прокручивание только на элементе с фоном */
