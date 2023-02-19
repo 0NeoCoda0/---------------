@@ -152,3 +152,8 @@ a {
 }
 
 /*BUTTONS-END*/
+
+/*Убрать подсвечивание ссылки синим фоном*/
+a:active {
+  background-color: transparent;
+}
