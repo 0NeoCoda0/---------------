@@ -251,6 +251,7 @@ div.social-ico {
     }
 }
 
+/*ПОРТРЕТНАЯ ОРИЕНТАЦИЯ*/
 
 @media (orientation:portrait) and (max-width: 912px) {
     /*Добавить отступ сверху для панели навигации*/
@@ -262,7 +263,7 @@ div.social-ico {
      div.middle-window {
         display: flex;
         flex-direction: column;
-        padding: 0 50px;
+        padding: 0;
     }
 
     /*Адаптация карты под ширину экрана*/
@@ -288,6 +289,8 @@ div.social-ico {
     /*Убирание отступов у заголовков*/
     div>h2 {
         margin: 0;
+        letter-spacing: 2px;
+        min-width: 0;
     }
 
     /*Настройка заголовка контейнера инфо-времени*/
@@ -304,12 +307,9 @@ div.social-ico {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
 
-    /*Создание границ у вложенных инфо-контейнеров*/
-    .contacts-container,
-    .social-container,
-    .time-container {
+        /*Создание границ у вложенных инфо-контейнеров*/
+    
         padding: 7px;
         margin: 7px;
         border: 1px solid whitesmoke;
@@ -317,6 +317,7 @@ div.social-ico {
 
         background-color: rgba(65, 70, 70, 0.575);
     }
+}
 
 @media (orientation:portrait) and (max-width: 540px) {
     /*Выравнивание инфо-контейнеров в столбик по центру*/
@@ -329,10 +330,25 @@ div.social-ico {
     .time-container {
         flex: none;
     }
-}
 
-}
+    /*убрать границы от краёв экрана у тела*/  
+    main>div.middle-window {
+      padding: 0;
+      margin: 0;
+    }
 
+    /*Центрировать карту*/
+    .middle-window>div.map>iframe {
+      width: 90vw;
+      min-width: 0;
+      align-self: center;
+    }
+
+    /*Добавить отступ для заголовка*/
+    h1 {
+        margin-left: 10px;
+    }
+  }
 /*
 1. Закончить адаптацию станицы для landscape
 2. Адаптировать страницу под portraite

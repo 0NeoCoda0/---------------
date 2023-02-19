@@ -404,8 +404,8 @@ img.bucket {
 
   /*Подсветить текущую иконку навигации */
 
-  .contacts-img {
+  img.contacts-img {
     border: 1px solid goldenrod;
-    box-shadow: 0 0 2px goldenrod;
+    box-shadow: 0 0 6px 1px goldenrod;
   }
 }
