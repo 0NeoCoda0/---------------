@@ -319,7 +319,7 @@ img.bucket {
     top: 0;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 130px;
     background-color: #1c1c1d;
     flex-direction: column;

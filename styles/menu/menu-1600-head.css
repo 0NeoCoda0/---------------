@@ -417,6 +417,11 @@ img.bucket {
     box-shadow: 0 0 6px 1px goldenrod;
   }
 
+  /*Создать правильную ширину у ссылок*/
+  nav>a {
+    width: 42px;
+  }
+
   /*Убрать подсвечивание ссылки синим фоном*/
   a:active {
     box-shadow: none;
