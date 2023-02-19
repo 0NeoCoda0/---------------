@@ -16,6 +16,7 @@ body {
   height: 100%;
   /*Default text style*/
   font-family: "CaviarDreams";
+  min-height: 100vh;
 }
 
 /*ФОН*/
@@ -24,5 +25,5 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-height: 100vh;
+  background-position: center center;
 }
