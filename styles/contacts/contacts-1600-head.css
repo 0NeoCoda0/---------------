@@ -116,7 +116,9 @@ nav>div.keitering>a::before {
 /* NAV FX & STYLE */
 
 /*Убрать подсвечивание ссылки синим фоном*/
-nav>a:active {
+a:active, a:focus {
+  box-shadow: none;
+  outline: none;
   background-color: transparent;
 }
 
@@ -322,7 +324,7 @@ img.bucket {
     top: 0;
     width: 100vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 130px;
     background-color: #1c1c1d;
     flex-direction: column;
