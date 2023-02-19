@@ -115,12 +115,7 @@ nav>div.keitering>a::before {
 
 /* NAV FX & STYLE */
 
-/*Убрать подсвечивание ссылки синим фоном*/
-a:active, a:focus {
-  box-shadow: none;
-  outline: none;
-  background-color: transparent;
-}
+
 
 /*------Подсветка выбранного текста-пункта навигации*/
 nav>div.contacts>a {
@@ -421,4 +416,11 @@ img.bucket {
   nav>a {
     width: 42px;
   }
+}
+
+/*Убрать подсвечивание ссылки синим фоном*/
+a:active {
+  box-shadow: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }

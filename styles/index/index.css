@@ -154,6 +154,8 @@ a {
 /*BUTTONS-END*/
 
 /*Убрать подсвечивание ссылки синим фоном*/
-nav>a:active {
-  background-color: transparent;
+a:active {
+  box-shadow: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
