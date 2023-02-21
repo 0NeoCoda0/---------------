@@ -120,7 +120,6 @@ button.add:hover {
     border: 1px solid gold;
     box-shadow: 0 0 2px gold;
 }
-}
 
 @media (orientation:landscape) and (max-width: 915px) {
     .main {
@@ -149,33 +148,34 @@ button.add:hover {
         width: 120px;
         font-size: 14px;
     }
+}
 
 
-    @media (orientation:portrait) {
-        .main {
-            margin-top: 160px;
-        }
-
-        div.article-title>p {
-            margin-left: 0;
-        }
-
-        div.border-table {
-            padding: 0 5vw;
-        }
-
-        article.product-card {
-            width: 120px;
-            height: 190px;
-        }
-
-        div.product-name>p {
-            font-size: 14px;
-        }
-
-        div.add_button>button {
-            height: 30px;
-            width: 120px;
-            font-size: 14px;
-        }
+@media (orientation:portrait) {
+    .main {
+        margin-top: 160px;
     }
+
+    div.article-title>p {
+        margin-left: 0;
+    }
+
+    div.border-table {
+        padding: 0 5vw;
+    }
+
+    article.product-card {
+        width: 120px;
+        height: 190px;
+    }
+
+    div.product-name>p {
+        font-size: 14px;
+    }
+
+    div.add_button>button {
+        height: 30px;
+        width: 120px;
+        font-size: 14px;
+    }
+}
