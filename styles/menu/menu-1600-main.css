@@ -35,8 +35,8 @@ div.article-title.mu-1 {
 
 div.article-container {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: start;
+    flex-direction: rown;
+    flex-wrap: wrap;
 
     margin-bottom: 20px;
 }
@@ -123,10 +123,6 @@ button.add:hover {
     border: 1px solid gold;
     box-shadow: 0 0 2px gold;
 }
-
-/*КАРУСЕЛЬ КАРТОЧЕК*/
-
-/*НАПИСАТЬ КАРУСЕЛЬ ЗДЕСЬ*/
 
 
 @media (orientation:portrait) {
