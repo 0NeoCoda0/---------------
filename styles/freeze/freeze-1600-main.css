@@ -137,11 +137,17 @@
     }
 
     article.product-card {
-        width: 130px;
+        width: 140px;
         height: 190px ;
     }
 
     div.product-name>p {
+        font-size: 14px;
+    }
+
+    div.add_button>button {
+        height: 30px;
+        width: 120px;
         font-size: 14px;
     }
 }
