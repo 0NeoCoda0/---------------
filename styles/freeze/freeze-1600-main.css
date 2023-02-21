@@ -64,6 +64,7 @@
         border-radius: 15px;
         margin: 0;
         padding: 0;
+        align-items: center;
     }
 
     /*ТЕКСТ В КАРТОЧКЕ*/
@@ -119,6 +120,28 @@
     button.add:hover {
         border: 1px solid gold;
         box-shadow: 0 0 2px gold;
+   }
+}
+
+@media (orientation:portrait) {
+    .main {
+        margin-top: 160px;
     }
 
+    div.article-title>p{
+        margin-left: 0;
+    }
+
+    div.border-table {
+        padding: 0 5vw;
+    }
+
+    article.product-card {
+        width: 130px;
+        height: 190px ;
+    }
+
+    div.product-name>p {
+        font-size: 14px;
+    }
 }

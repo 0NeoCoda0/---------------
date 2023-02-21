@@ -349,7 +349,7 @@ img.bucket {
   }
 }
 
-@media (orientation:portrait) and (max-width: 912px) {
+@media (orientation:portrait) {
 
   /*Перенести шапку в вертикальное расположение*/
   .header {
