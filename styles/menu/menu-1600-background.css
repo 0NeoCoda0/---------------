@@ -9,17 +9,18 @@
 }
 
 html, body {
-  background-color: #1c1c1d;
+  
   margin: 0;
   padding: 0;
 }
 
 body {
   background-image: url(../../images/monoback.jpg);
+  background-color: #1c1c1d;
   vertical-align: middle;
   background-origin: border-box;
-  background-size: cover;
-  background-repeat: repeat-y;
-  background-attachment: scroll;
+  background-size: contain;
+  background-repeat: repeat;
+  background-attachment:scroll;
   height: 100%;
 }
