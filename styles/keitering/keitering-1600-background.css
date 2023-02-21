@@ -1,26 +1,27 @@
 @font-face {
-    font-family: "CaviarDreams";
-    src: url(../../fonts/CaviarDreams/CaviarDreams.ttf);
-  }
-  
-  @font-face {
-    font-family: "trebuchetms";
-    src: url(../../fonts/Trebuchet\ MS/trebuchetms.ttf);
-  }
+  font-family: "CaviarDreams";
+  src: url(../../fonts/CaviarDreams/CaviarDreams.ttf);
+}
 
-  html, body {
-    background-color: #1c1c1d;
-    margin: 0;
-    padding: 0;
-    viewport-fit: contain;
-  }
-  
-  .background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-size: contain;
-    z-index: -1;
-  }
+@font-face {
+  font-family: "trebuchetms";
+  src: url(../../fonts/Trebuchet\ MS/trebuchetms.ttf);
+}
+
+html,
+body {
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../../images/monoback.jpg);
+  background-color: #1c1c1d;
+  vertical-align: middle;
+  background-origin: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
