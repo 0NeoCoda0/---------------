@@ -19,8 +19,7 @@ body {
   vertical-align: middle;
   background-origin: border-box;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
+  background-repeat: repeat;
   background-attachment: fixed;
   height: 100vh;
 }
