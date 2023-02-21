@@ -254,7 +254,7 @@ div.social-ico {
 
 /*ПОРТРЕТНАЯ ОРИЕНТАЦИЯ*/
 
-@media (orientation:portrait) and (max-width: 912px) {
+@media (orientation:portrait) {
     /*Добавить отступ сверху для панели навигации*/
     main.main {
         margin-top: 150px;
@@ -285,6 +285,11 @@ div.social-ico {
         border-radius: 50px;
 
         background-color: rgba(34, 37, 37, 0.575);
+    }
+
+    h1 {
+        margin-left: 20px;
+        max-width: 300px;
     }
 
     /*Убирание отступов у заголовков*/
@@ -343,11 +348,6 @@ div.social-ico {
       width: 90vw;
       min-width: 0;
       align-self: center;
-    }
-
-    /*Добавить отступ для заголовка*/
-    h1 {
-        margin-left: 10px;
     }
   }
 /*
