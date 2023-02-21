@@ -10,122 +10,121 @@
 
 /*------ WIDTH 1600-------*/
 
-@media (orientation:landscape) {
-    .main {
-        margin-top: 80px;
-    }
 
-    /*ЗАГОЛОВОК ПУНКТА МЕНЮ*/
+.main {
+    margin-top: 80px;
+}
 
-    div.article-title {
-        background-color: #4b4a4a2d;
-        border-radius: 50px;
-    }
+/*ЗАГОЛОВОК ПУНКТА МЕНЮ*/
 
-    div.article-title>p {
-        /*font*/
-        font-size: 30px;
-        color: white;
+div.article-title {
+    background-color: #4b4a4a2d;
+    border-radius: 50px;
+}
 
-        /*position*/
-        margin-left: 60px;
-        font-family: "CaviarDreams", serif;
-        font-weight: 700;
-        letter-spacing: 1.2px;
-    }
+div.article-title>p {
+    /*font*/
+    font-size: 30px;
+    color: white;
 
-    div.article-title.mu-1 {
-        margin-top: 80px;
-    }
+    /*position*/
+    margin-left: 60px;
+    font-family: "CaviarDreams", serif;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
 
-    /*КОНТЕЙНЕР С КАРТОЧКАМИ*/
-    div.article-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+div.article-title.mu-1 {
+    margin-top: 80px;
+}
 
-    .border-table {
-        padding: 0 40px;
-    }
+/*КОНТЕЙНЕР С КАРТОЧКАМИ*/
+div.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-    /*КАРТОЧКИ ТОВАРОВ*/
-    article.product-card {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
+.border-table {
+    padding: 0 40px;
+}
 
-        padding: 10px;
-        margin: 10px;
+/*КАРТОЧКИ ТОВАРОВ*/
+article.product-card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 
-        background-color: #343434;
-        border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
 
-        width: 300px;
-        height: 340x;
-    }
+    background-color: #343434;
+    border-radius: 20px;
 
-    .product-card>img {
-        border-radius: 15px;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-    }
+    width: 300px;
+    height: 340x;
+}
 
-    /*ТЕКСТ В КАРТОЧКЕ*/
+.product-card>img {
+    border-radius: 15px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
 
-    div.price>p {
-        color: white;
-        font-family: "CaviarDreams", sans-serif;
-        font-size: 24px;
-        font-weight: 400;
-        
-        padding: 0;
-        margin: 5% 0 0 0;
-    }
+/*ТЕКСТ В КАРТОЧКЕ*/
 
-    div.product-name>p {
-        color: white;
-        padding: 0;
-        margin: 0 0 5% 0;
+div.price>p {
+    color: white;
+    font-family: "CaviarDreams", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 
-        /*font*/
-        letter-spacing: 0;
-        font-family: "CaviarDreams", sans-serif;
-        font-size: 20px;
-    }
+    padding: 0;
+    margin: 5% 0 0 0;
+}
 
-    /*КНОПКА В КАРТОЧКЕ*/
+div.product-name>p {
+    color: white;
+    padding: 0;
+    margin: 0 0 5% 0;
 
-    div.add_button {
-        display: flex;
-        justify-content: center;
-    }
+    /*font*/
+    letter-spacing: 0;
+    font-family: "CaviarDreams", sans-serif;
+    font-size: 20px;
+}
 
-    button.add {
-        padding: 0;
+/*КНОПКА В КАРТОЧКЕ*/
 
-        width: 100%;
-        height: 35px;
+div.add_button {
+    display: flex;
+    justify-content: center;
+}
 
-        border: 1px solid rgb(230, 230, 230);
-        border-radius: 10px;
-        border-width: 1;
-        box-shadow: 0 0 2px rgb(230, 230, 230);
+button.add {
+    padding: 0;
 
-        background-color: #4b4a4a;
-        color: rgb(230, 230, 230);
+    width: 100%;
+    height: 35px;
 
-        font-family: "CaviarDreams", sans-serif;
-        font-size: 18px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 10px;
+    border-width: 1;
+    box-shadow: 0 0 2px rgb(230, 230, 230);
 
-        cursor: pointer;
-    }
+    background-color: #4b4a4a;
+    color: rgb(230, 230, 230);
 
-    button.add:hover {
-        border: 1px solid gold;
-        box-shadow: 0 0 2px gold;
-   }
+    font-family: "CaviarDreams", sans-serif;
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+button.add:hover {
+    border: 1px solid gold;
+    box-shadow: 0 0 2px gold;
 }
 
 @media (orientation:landscape) and (max-width: 915px) {
@@ -133,7 +132,7 @@
         margin-top: 50px;
     }
 
-    div.article-title>p{
+    div.article-title>p {
         margin-left: 0;
     }
 
@@ -143,7 +142,7 @@
 
     article.product-card {
         width: 120px;
-        height: 190px ;
+        height: 190px;
     }
 
     div.product-name>p {
@@ -154,7 +153,7 @@
         height: 30px;
         width: 120px;
         font-size: 14px;
-    }    
+    }
 }
 
 
@@ -163,7 +162,7 @@
         margin-top: 160px;
     }
 
-    div.article-title>p{
+    div.article-title>p {
         margin-left: 0;
     }
 
@@ -173,7 +172,7 @@
 
     article.product-card {
         width: 120px;
-        height: 190px ;
+        height: 190px;
     }
 
     div.product-name>p {
