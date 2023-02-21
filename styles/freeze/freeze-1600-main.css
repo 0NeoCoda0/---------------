@@ -163,7 +163,10 @@ button.add:hover {
     }
 
     div.article-title>p {
-        margin-left: 0;
+        margin-left: 20px;
+        padding: 5px;
+        font-size: 22px;
+
     }
 
     div.border-table {
@@ -183,5 +186,9 @@ button.add:hover {
         height: 30px;
         width: 120px;
         font-size: 14px;
+    }
+
+    div.article-title.mu-1 {
+        margin-top: 40px;
     }
 }

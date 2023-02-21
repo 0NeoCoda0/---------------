@@ -16,6 +16,11 @@
 
 /*ЗАГОЛОВОК ПУНКТА МЕНЮ*/
 
+div.article-title {
+    background-color: #4b4a4a2d;
+    border-radius: 50px;
+}
+
 div.article-title>p {
     /*font*/
     font-size: 30px;
@@ -157,7 +162,10 @@ button.add:hover {
     }
 
     div.article-title>p {
-        margin-left: 0;
+        margin-left: 20px;
+        padding: 5px;
+        font-size: 22px;
+
     }
 
     div.border-table {
@@ -177,5 +185,9 @@ button.add:hover {
         height: 30px;
         width: 120px;
         font-size: 14px;
+    }
+
+    div.article-title.mu-1 {
+        margin-top: 40px;
     }
 }
