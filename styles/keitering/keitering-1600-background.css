@@ -9,6 +9,7 @@
   }
 
   html, body {
+    background-color: #1c1c1d;
     margin: 0;
     padding: 0;
     viewport-fit: contain;
