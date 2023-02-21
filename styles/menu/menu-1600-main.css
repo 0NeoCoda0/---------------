@@ -21,7 +21,7 @@ div.article-title>p {
     color: white;
 
     /*position*/
-    margin-left: 60px;
+    margin-left: 10px;
     font-family: "CaviarDreams", serif;
     font-weight: 700;
     letter-spacing: 1.2px;
@@ -136,4 +136,6 @@ button.add:hover {
     div.article-title>p {
         margin: 0;
     }
+
+
 }
