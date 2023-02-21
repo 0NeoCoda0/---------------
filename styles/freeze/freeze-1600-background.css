@@ -8,22 +8,17 @@
     src: url(../../fonts/Trebuchet\ MS/trebuchetms.ttf);
 }
 
-/*ТЕЛО*/
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  /*Default text style*/
-  font-family: "CaviarDreams";
-  min-height: 100vh;
 }
 
-/*ФОН*/
-body {
-  background-image: url(../../images/monoback.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: contain;
+  z-index: -1;
 }
