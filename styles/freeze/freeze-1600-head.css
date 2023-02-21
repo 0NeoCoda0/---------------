@@ -40,6 +40,8 @@ div.logo-img img {
   width: 200px;
   margin-top: calc(var(--upper-space) * 2);
   margin-left: 20px;
+  align-items: center;
+  align-self: center;
 }
 
 /*---Правая линия в шапке*/
@@ -161,9 +163,9 @@ img.bucket {
 }
 
 /*Убрать дублирующие ссылки внутри иконок для landscape */
-  nav>a {
-    display: none;
-  }
+nav>a {
+  display: none;
+}
 
 @media (orientation: landscape) and (max-width: 1060px) {
 
@@ -175,6 +177,7 @@ img.bucket {
   nav div.contacts {
     display: none;
   }
+
   /*задать размер иконке */
   .contacts+a {
     width: 42px;
@@ -190,7 +193,7 @@ img.bucket {
     background-color: #4b4a4a;
     border: 1px solid whitesmoke;
     box-shadow: 0 0 2px whitesmoke;
-    
+
 
     height: var(--ico-size);
     width: var(--ico-size);
@@ -283,7 +286,7 @@ img.bucket {
     border-radius: 10px;
     border: 1px solid whitesmoke;
     box-shadow: 0 0 2px whitesmoke;
-    
+
     background-color: #4b4a4a;
 
     height: var(--ico-size);
@@ -321,6 +324,7 @@ img.bucket {
 
   div.logo-img>img {
     margin: 10px 0 0 0;
+    align-items: center;
     align-self: center;
     justify-content: center;
     height: 50px;
@@ -376,6 +380,7 @@ img.bucket {
 
   div.logo-img>img {
     margin: 10px 0 0 0;
+    align-items: center;
     align-self: center;
     justify-content: center;
     height: 50px;
@@ -404,7 +409,7 @@ img.bucket {
   }
 
   /*показать иконки*/
-  nav>a{
+  nav>a {
     display: block;
   }
 

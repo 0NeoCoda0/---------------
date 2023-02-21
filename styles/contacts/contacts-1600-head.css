@@ -40,6 +40,8 @@ div.logo-img img {
   width: 200px;
   margin-top: calc(var(--upper-space) * 2);
   margin-left: 20px;
+  align-items: center;
+  align-self: center;
 }
 
 /*---Правая линия в шапке*/
