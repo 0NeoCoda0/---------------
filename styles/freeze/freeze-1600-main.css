@@ -10,12 +10,17 @@
 
 /*------ WIDTH 1600-------*/
 
-@media (orientation:landscape), (max-width: 1600px) {
+@media (orientation:landscape) {
     .main {
         margin-top: 80px;
     }
 
     /*ЗАГОЛОВОК ПУНКТА МЕНЮ*/
+
+    div.article-title {
+        background-color: #4b4a4a2d;
+        border-radius: 50px;
+    }
 
     div.article-title>p {
         /*font*/

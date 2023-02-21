@@ -19,7 +19,7 @@ body {
   background-color: #1c1c1d;
   vertical-align: middle;
   background-origin: border-box;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 100%;
