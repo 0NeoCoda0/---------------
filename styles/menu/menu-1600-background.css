@@ -20,5 +20,6 @@ body {
   background-origin: border-box;
   background-size: cover;
   background-repeat: repeat-y;
-  background-attachment: fixed;
+  background-attachment: scroll;
+  height: 100%;
 }
