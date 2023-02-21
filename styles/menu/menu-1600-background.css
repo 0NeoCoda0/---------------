@@ -11,15 +11,13 @@
 html, body {
   margin: 0;
   padding: 0;
-  viewport-fit: contain;
 }
 
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-size: contain;
-  z-index: -1;
+body {
+  background-image: url(../../images/monoback.jpg);
+  vertical-align: middle;
+  background-origin: border-box;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
 }
