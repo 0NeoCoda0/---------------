@@ -38,29 +38,3 @@ a:active {
   outline: none;
   -webkit-tap-highlight-color: transparent;
 }
-@media (orientation:portrait) and (max-width: 450px) {
-  /*Ограничить размер заголовка*/
-  h1 {
-    max-width: 300px;
-  }
-  
-  /*добавить отступы для напсей адреса*/
-  div.under-map {
-    margin: 0 18px;
-  }
-  /*Убрать отступ у надписи метро*/
-  div.metro {
-    margin: 0;
-  }
-}
-
-
-@media (orientation:portrait) and (max-width: 350px) {
-  /*выровнять адрес под картой*/
-  div.under-map {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 15vw;
-  }
-}

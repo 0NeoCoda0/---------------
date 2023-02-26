@@ -62,15 +62,6 @@ div.logo-img img {
   background: linear-gradient(270deg, #343434, #343434 70%, #34343400 95%);
 }
 
-/*Учесть отсутствующую полосу прокрутки*/
-div.empty-scroll {
-  width: 15px;
-
-  margin-top: var(--upper-space);
-  align-self: right;
-  background-color: #343434;
-}
-
 /*------Контейнеры для меню навигации*/
 nav {
   display: flex;
