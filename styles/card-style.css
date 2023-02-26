@@ -42,6 +42,8 @@ div.article-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+   padding-bottom: 30px;
 }
 
 .border-table {
@@ -188,10 +190,6 @@ button.add:hover {
         height: 30px;
         width: 120px;
         font-size: 14px;
-    }
-
-    div.article-title.mu-1 {
-        margin-top: 40px;
     }
 
     .product-card>img {
