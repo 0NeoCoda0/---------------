@@ -232,20 +232,23 @@ div.social-ico {
 }
 
 @media (orientation: landscape) and (max-width: 620px) {
-    
+
     /*Добавить отступ сверху для панели навигации*/
     .main {
         margin-top: 130px;
     }
+
     /*Убрать отступы у тела для центрирования*/
     div.middle-window {
         margin: 0;
         padding: 0;
     }
+
     /*Центрировать тело*/
     div.map {
         justify-content: center;
     }
+
     /*Убрать центрирование у заголовка*/
     h1 {
         align-self: left;
@@ -255,13 +258,14 @@ div.social-ico {
 /*ПОРТРЕТНАЯ ОРИЕНТАЦИЯ*/
 
 @media (orientation:portrait) {
+
     /*Добавить отступ сверху для панели навигации*/
     main.main {
         margin-top: 150px;
     }
 
-     /*Расположение элементов в среднем листе в колонку*/
-     div.middle-window {
+    /*Расположение элементов в среднем листе в колонку*/
+    div.middle-window {
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -322,7 +326,7 @@ div.social-ico {
         align-items: center;
 
         /*Создание границ у вложенных инфо-контейнеров*/
-    
+
         padding: 7px;
         margin: 7px;
         border: 1px solid whitesmoke;
@@ -332,7 +336,8 @@ div.social-ico {
     }
 }
 
-@media (orientation:portrait) and (max-width: 540px) {
+@media (orientation:portrait) and (max-width: 560px) {
+
     /*Выравнивание инфо-контейнеров в столбик по центру*/
     div.work-time-window {
         flex-direction: column;
@@ -344,20 +349,45 @@ div.social-ico {
         flex: none;
     }
 
-    /*убрать границы от краёв экрана у тела*/  
+    /*убрать границы от краёв экрана у тела*/
     main>div.middle-window {
-      padding: 0;
-      margin: 0;
+        padding: 0;
+        margin: 0;
     }
 
     /*Центрировать карту*/
     .middle-window>div.map>iframe {
-      width: 90vw;
-      min-width: 0;
-      align-self: center;
+        width: 90vw;
+        min-width: 0;
+        align-self: center;
     }
-  }
-/*
-1. Закончить адаптацию станицы для landscape
-2. Адаптировать страницу под portraite
-3. Выполнить успешное тестирование адаптации на смартфоне*/
+}
+
+@media (orientation:portrait) and (max-width: 450px) {
+
+    /*Ограничить размер заголовка*/
+    h1 {
+        max-width: 300px;
+    }
+
+    /*добавить отступы для напсей адреса*/
+    div.under-map {
+        margin: 0 18px;
+    }
+
+    /*Убрать отступ у надписи метро*/
+    div.metro {
+        margin: 0;
+    }
+}
+
+@media (orientation:portrait) and (max-width: 350px) {
+
+    /*выровнять адрес под картой*/
+    div.under-map {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 15vw;
+    }
+}

@@ -121,13 +121,6 @@ nav>a:active {
   background-color: transparent;
 }
 
-
-/*------Подсветка выбранного текста-пункта навигации*/
-nav>div.contacts>a {
-  text-shadow: 0 0 16px goldenrod;
-  color: goldenrod;
-}
-
 /*Стилизация текста пунктов навигации и эффекты*/
 nav>div>a {
   color: white;
@@ -190,8 +183,8 @@ img.bucket {
 
     border-radius: 10px;
     background-color: #4b4a4a;
-    border: 1px solid goldenrod;
-    box-shadow: 0 0 16px goldenrod;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 0 2px whitesmoke;
     
 
     height: var(--ico-size);
@@ -283,8 +276,8 @@ img.bucket {
     margin-right: 30px;
 
     border-radius: 10px;
-    border: 1px solid whitesmoke;
-    box-shadow: 0 0 2px whitesmoke;
+    border: 1px solid goldenrod;
+    box-shadow: 0 0 16px goldenrod;
     
     background-color: #4b4a4a;
 
@@ -324,6 +317,7 @@ img.bucket {
   div.logo-img>img {
     margin: 10px 0 0 0;
     align-self: center;
+    align-items: center;
     justify-content: center;
     height: 50px;
   }
@@ -351,7 +345,7 @@ img.bucket {
   }
 }
 
-@media (orientation:portrait) and (max-width: 912px) {
+@media (orientation:portrait) {
 
   /*Перенести шапку в вертикальное расположение*/
   .header {
@@ -378,6 +372,7 @@ img.bucket {
 
   div.logo-img>img {
     margin: 10px 0 0 0;
+    align-items: center;
     align-self: center;
     justify-content: center;
     height: 50px;
@@ -449,12 +444,6 @@ img.bucket {
     cursor: pointer;
   }
 
-  /*Подсветить текущую иконку навигации */
-
-  img.contacts-img {
-    border: 1px solid goldenrod;
-    box-shadow: 0 0 16px goldenrod;
-  }
 }
 
 /*Убрать подсвечивание ссылки синим фоном*/
@@ -462,32 +451,4 @@ a:active {
   box-shadow: none;
   outline: none;
   -webkit-tap-highlight-color: transparent;
-}
-@media (orientation:portrait) and (max-width: 450px) {
-  /*Ограничить размер заголовка*/
-  h1 {
-    max-width: 300px;
-  }
-  
-  /*добавить отступы для напсей адреса*/
-  div.under-map {
-    margin: 0 18px;
-  }
-  /*Убрать отступ у надписи метро*/
-  div.metro {
-    margin: 0;
-  }
-}
-
-
-@media (orientation:portrait) and (max-width: 350px) {
-  /*выровнять адрес под картой*/
-  div.under-map {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 15vw;
-  }
-
-  
 }
